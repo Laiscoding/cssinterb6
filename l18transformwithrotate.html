@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform with rotate</title>
+		<style type="text/css">
+            .container{
+                width: 1000px;
+                background-color: gray;
+
+                /* 1rem = 16px */
+                margin: 3rem 0;
+            }
+
+            .container .square{
+                width: 150px;
+                height: 50px;
+                background-color: red;
+                color: #fff;
+                font-size: 20px;
+
+                text-align: center;
+                line-height: 50px;
+
+                border-radius: 3px;
+
+                transition: transform .5s;
+
+            }
+
+            #rotate:hover{
+                /* transform: rotate(45deg); */
+                /* transform: rotate(-45deg); */
+                /* transform: rotate(90deg); */
+
+                /* transform: rotate(360deg); */
+                /* transform: rotate(720deg); */
+
+                /* 1turn = 360deg */
+                /* transform: rotate(4turn); */
+                /* transform: rotate(-2turn); */
+
+                /* 400grad = 360deg = 1turn */
+                /* transform: rotate(400grad); */
+                transform: rotate(-200grad);
+            }
+
+            #rotatex{
+                /* transform: rotateX(45deg); */
+                /* transform: rotateX(-45deg); */
+                transform: rotateX(90deg);
+            }
+            
+            #rotatey{
+                transform: rotateY(45deg);
+                /* transform: rotateY(-45deg); */
+                /* transform: rotateY(90deg); */
+            }
+
+
+		</style>
+	
+	</head>
+	<body>
+		<div class="container">
+            <div id="rotate" class="square">DIV1 ease</div>
+        </div>
+
+        <div class="container">
+            <div id="rotatex" class="square">DIV1 linear</div>
+        </div>
+
+        <div class="container">
+            <div id="rotatey" class="square">DIV1 ease-in</div>
+        </div>
+
+       
+        </div>
+		
+	</body>
+
+</html>
